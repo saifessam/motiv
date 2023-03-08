@@ -1,0 +1,97 @@
+.car-preview-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--foreground);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.car-preview-card .car-preview-card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  gap: var(--spacing);
+}
+
+.car-preview-card .car-preview-card-header .car-preview-card-header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.car-preview-card .car-preview-card-header .car-preview-card-header-title h4 {
+  white-space: nowrap;
+}
+
+.car-preview-card .car-preview-card-header .car-preview-card-header-title span {
+  font-size: var(--small-font);
+  font-weight: 400;
+  color: var(--grey-1);
+}
+
+.car-preview-card .car-preview-card-header button {
+  cursor: pointer;
+}
+
+.car-preview-card .car-preview-card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 2/1;
+}
+
+.car-preview-card .car-preview-card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  gap: var(--spacing);
+}
+
+.car-preview-card .car-preview-card-footer .car-preview-card-footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--spacing) / 2);
+}
+
+.car-preview-card .car-preview-card-footer .car-preview-card-footer-section span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--spacing) / 6);
+  font-size: var(--small-font);
+  font-weight: 400;
+  color: var(--grey-1);
+}
+
+.car-preview-card .car-preview-card-footer .car-preview-card-footer-section span#price {
+  font-size: var(--medium-font);
+  font-weight: 700;
+  color: var(--primary-black);
+}
+
+.car-preview-card .car-preview-card-footer .car-preview-card-footer-section span svg {
+  width: 16px;
+  height: 16px;
+}
+
+.car-preview-card .car-preview-card-footer .car-preview-card-footer-section span svg path {
+  fill: var(--primary-purple);
+}

@@ -1,0 +1,53 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--foreground);
+  padding: calc(var(--spacing) / 2) var(--spacing);
+}
+
+nav .navbar-search .navbar-search-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(var(--spacing) / 4);
+  padding: calc(var(--spacing) / 4) calc(var(--spacing) / 2);
+  background-color: var(--secondary);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+nav .navbar-search .navbar-search-input input {
+  font-size: var(--medium-font);
+  font-weight: 500;
+  padding: 0 calc(var(--spacing) / 4);
+  border-left: 2px solid var(--secondary-orange);
+}
+
+nav .navbar-items {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+nav .navbar-items img:nth-child(2) {
+  width: calc(var(--spacing) * 2);
+  height: calc(var(--spacing) * 2);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

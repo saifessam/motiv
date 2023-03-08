@@ -1,0 +1,91 @@
+.status-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+  padding: calc(var(--spacing) * 2) var(--spacing);
+  background-color: var(--foreground);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.status-card .status-card-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--spacing) / 2);
+}
+
+.status-card .status-card-icon {
+  width: calc(var(--spacing) * 2);
+  height: calc(var(--spacing) * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.status-card .status-card-icon svg path {
+  fill: var(--primary);
+}
+
+.status-card .status-card-title {
+  font-size: var(--medium-font);
+}
+
+.progress-bar {
+  --value: attr(data-value);
+  position: relative;
+  width: 75%;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--background);
+  overflow: hidden;
+  border-radius: 100px 100px 0 0;
+  -webkit-border-radius: 100px 100px 0 0;
+  -moz-border-radius: 100px 100px 0 0;
+  -ms-border-radius: 100px 100px 0 0;
+  -o-border-radius: 100px 100px 0 0;
+}
+
+.progress-bar::after {
+  content: var(--value);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--large-font);
+  background-color: var(--foreground);
+  z-index: 2;
+  border-radius: 100px 100px 0 0;
+  -webkit-border-radius: 100px 100px 0 0;
+  -moz-border-radius: 100px 100px 0 0;
+  -ms-border-radius: 100px 100px 0 0;
+  -o-border-radius: 100px 100px 0 0;
+}
+
+.progress-bar .progress-bar-range {
+  height: 100%;
+  aspect-ratio: 2 / 1;
+}

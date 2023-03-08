@@ -1,0 +1,69 @@
+aside {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  background-color: var(--foreground);
+}
+
+aside .sidebar-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--spacing) / 2);
+}
+
+aside .sidebar-logo span {
+  font-size: var(--large-font);
+}
+
+aside .sidebar-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+aside .sidebar-items .sidebar-items-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(var(--spacing) / 2);
+}
+
+aside .sidebar-items .sidebar-items-section .sidebar-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: calc(var(--spacing) / 4) calc(var(--spacing) / 2);
+  border-radius: var(--border-radius);
+  gap: calc(var(--spacing) / 2);
+  cursor: pointer;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+aside .sidebar-items .sidebar-items-section .sidebar-item:hover,
+aside .sidebar-items .sidebar-items-section .sidebar-item.active {
+  background-color: var(--secondary);
+}
+
+aside .sidebar-items .sidebar-items-section .sidebar-item span {
+  font-size: var(--medium-font);
+  font-weight: 500;
+  color: var(--grey-1);
+}

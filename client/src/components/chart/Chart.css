@@ -1,0 +1,90 @@
+.chart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--foreground);
+  gap: var(--spacing);
+  padding: var(--spacing);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.chart .chart-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chart .chart-title h4 {
+  font-size: var(--medium-font);
+}
+
+.chart .chart-title h4 span {
+  font-size: var(--medium-font);
+  font-weight: 400;
+}
+
+.chart .chart-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--spacing);
+}
+
+.chart .chart-content .chart-content-selector {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart .chart-content .chart-content-selector.reversed {
+  flex-direction: row-reverse;
+}
+
+.chart .chart-content .chart-content-selector .chart-content-selector-title {
+  font-size: var(--small-font);
+}
+
+.chart .chart-content .chart-content-selector .chart-content-selector-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--secondary);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.chart .chart-content .chart-content-selector .chart-content-selector-options button {
+  font-size: var(--small-font);
+  padding: calc(var(--spacing) / 4) calc(var(--spacing) / 2);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.chart .chart-content .chart-content-selector .chart-content-selector-options button.active {
+  background-color: var(--secondary-blue);
+  color: var(--foreground);
+}
+
+.chart .chart-content .chart-content-graph {
+  width: 100%;
+  height: 250px;
+}

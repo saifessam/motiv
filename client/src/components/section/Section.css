@@ -1,0 +1,30 @@
+section {
+  position: relative;
+  width: 100%;
+}
+
+section.horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+section.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+section.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  gap: var(--spacing);
+}
+
+section.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  gap: var(--spacing);
+}

@@ -1,0 +1,23 @@
+.error-message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.error-message svg {
+  width: 128px;
+  height: 128px;
+}
+
+.error-message svg path {
+  fill: var(--secondary-rose);
+}
+
+.error-message span {
+  font-size: var(--extra-large-font);
+  color: var(--secondary-rose);
+}

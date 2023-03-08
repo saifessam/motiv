@@ -1,0 +1,71 @@
+.car-details-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.car-details-card .car-details-card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(var(--spacing) / 2);
+  padding: var(--spacing);
+  color: var(--primary-black);
+}
+
+.car-details-card .car-details-card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 2/1;
+}
+
+.car-details-card .car-details-card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(var(--spacing) / 2);
+  padding: var(--spacing);
+}
+
+.car-details-card .car-details-card-footer .car-details-card-footer-title {
+  color: var(--primary-black);
+}
+
+.car-details-card .car-details-card-footer .car-details-card-footer-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.car-details-card .car-details-card-footer .car-details-card-footer-actions .car-details-card-footer-actions-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(var(--spacing) / 2);
+  color: var(--primary-black);
+}
+
+.car-details-card .car-details-card-footer .car-details-card-footer-actions .car-details-card-footer-actions-buttons svg {
+  width: 16px;
+  height: 16px;
+}
+
+.car-details-card .car-details-card-footer .car-details-card-footer-actions .car-details-card-footer-actions-price {
+  color: var(--primary-black);
+}
